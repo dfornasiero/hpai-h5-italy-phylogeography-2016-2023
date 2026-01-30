@@ -1,13 +1,14 @@
 # Continuous phylogeography reveals shifting environmental drivers of Highly Pathogenic Avian Influenza H5 spread in Italy, 2016-2023
-Diletta Fornasiero¹˒⁶\*, Paolo Mulatti¹, Alice Fusaro¹, Isabella Monne¹, Fabiana Gambaro², Simon Dellicour²˒³˒⁴, Francesca Scolamacchia¹, Luca Martelli¹, Giulia Faustini⁵, Mariette F. Ducatez⁶, Claire Guinat⁶
-¹ Istituto Zooprofilattico Sperimentale delle Venezie, Viale dell’Università 10, 35020, Legnaro, Italy
-² Spatial Epidemiology Lab (SpELL), Université Libre de Bruxelles, Brussels, Belgium
-³ Department of Microbiology, Immunology and Transplantation, Rega Institute, Laboratory for Clinical and Epidemiological Virology, KU Leuven, Leuven, Belgium
-⁴ Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles, Vrije Universiteit Brussel, Brussels, Belgium
-⁵ Istituto Zooprofilattico Sperimentale della Lombardia ed Emilia-Romagna, Via A. Bianchi 9, 25124, Brescia, Italy
-⁶ Univ Toulouse, ENVT, INRAE, IHAP, Toulouse, France
+Diletta Fornasiero¹˒⁶*, Paolo Mulatti¹, Alice Fusaro¹, Isabella Monne¹, Fabiana Gambaro², Simon Dellicour²˒³˒⁴, Francesca Scolamacchia¹, Luca Martelli¹, Giulia Faustini⁵, Mariette F. Ducatez⁶, Claire Guinat⁶\
 
-\*Corresponding author: ** Diletta Fornasiero** - `dfornasiero@izsvenezie.it`
+¹ Istituto Zooprofilattico Sperimentale delle Venezie, Viale dell’Università 10, 35020, Legnaro, Italy\
+² Spatial Epidemiology Lab (SpELL), Université Libre de Bruxelles, Brussels, Belgium\
+³ Department of Microbiology, Immunology and Transplantation, Rega Institute, Laboratory for Clinical and Epidemiological Virology, KU Leuven, Leuven, Belgium\
+⁴ Interuniversity Institute of Bioinformatics in Brussels, Université Libre de Bruxelles, Vrije Universiteit Brussel, Brussels, Belgium\
+⁵ Istituto Zooprofilattico Sperimentale della Lombardia ed Emilia-Romagna, Via A. Bianchi 9, 25124, Brescia, Italy\
+⁶ Univ Toulouse, ENVT, INRAE, IHAP, Toulouse, France\
+
+\*Corresponding author: **Diletta Fornasiero** - `dfornasiero@izsvenezie.it`
 ------------------------------------------------------------------------
 
 ## Abstract
