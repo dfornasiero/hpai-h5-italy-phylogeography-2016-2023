@@ -27,11 +27,11 @@ This repository contains the data and analytical pipeline for reconstructing the
 ## 📂 Project Structure
 The project is organised into five main functional modules:
 
-* **`data/`**: Geospatial data, including environmental rasters (cleaned per epidemic wave) and shapefiles for Italy and Europe.
+* **`data/`**: Cleaned environmental rasters per epidemic wave, and shapefiles for Italy and Europe.
 * **`data_preparation/`**: Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
 * **`DTA/`**: BEAST XML configurations for Discrete Trait Analysis.
 * **`continuous_reconstruction/`**: BEAST XML configurations for Continuous Phylogeography.
-* **`phylogeography/`**: The core post-BEAST analytical suite (extraction, statistics, and landscape correlations).
+* **`phylogeography/`**: A set of scripts for tree extraction, dispersal statistics, and phylogeography analyses.
 
 ---
 
