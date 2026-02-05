@@ -67,12 +67,11 @@ Test the impact of environmental factors (Conductance/Resistance) on viral dispe
 ---
 
 ## 📊 Visualizations
-## 📊 Visualizations
 The final results are integrated and rendered using the `multipanel_plots.R` script. This script synthesises the outputs from all previous steps to generate the primary publication figures (Figures 1-3), consisting of:
-* **Panel A**: **Epidemic Curves**
-* **Panel B**: **MCC Continuous Trees**
-* **Panel C**: **Spatial Wavefront Distance**
-* **Panel D**: **Continuous Spatial Reconstruction**
+* Panel A: Epidemic Curves
+* Panel B: MCC Continuous Trees
+* Panel C: Spatial Wavefront Distance
+* Panel D: Continuous Spatial Reconstruction
 
 
 ---
