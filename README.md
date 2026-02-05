@@ -25,7 +25,7 @@ This repository contains the data and analytical pipeline for reconstructing the
 ---
 
 ## 📂 Project Structure
-The project is organised into five main functional modules:
+The project is organised into five main folders:
 
 * **`data/`**: Cleaned environmental rasters per epidemic wave, and shapefiles for Italy and Europe.
 * **`data_preparation/`**: Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
