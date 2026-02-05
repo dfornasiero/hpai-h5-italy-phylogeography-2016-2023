@@ -24,18 +24,18 @@ This repository contains the data and analytical pipeline for reconstructing the
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 The project is organised into five main folders:
 
-* **`data/`**: Cleaned environmental rasters per epidemic wave, and shapefiles for Italy and Europe.
-* **`data_preparation/`**: Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
+* **`data/`**: Zipped files containing cleaned environmental rasters per epidemic wave, and shapefiles for Italy and Europe.
+* **`data_preparation/`**: R Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
 * **`DTA/`**: BEAST XML configurations for Discrete Trait Analysis.
 * **`continuous_reconstruction/`**: BEAST XML configurations for Continuous Phylogeography.
 * **`phylogeography/`**: A set of scripts for tree extraction, dispersal statistics, and phylogeography analyses.
 
 ---
 
-## 🚀 Analytical Pipeline
+## Analytical Pipeline
 To replicate the analysis, follow the scripts in this order:
 
 ### 1. Data Pre-processing
@@ -66,7 +66,7 @@ Test the impact of environmental factors (Conductance/Resistance) on viral dispe
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 The final results are integrated and rendered using the `multipanel_plots.R` script. This script synthesises the outputs from all previous steps to generate the primary publication figures (Figures 1-3), consisting of:
 * Panel A: Epidemic Curves
 * Panel B: MCC Continuous Trees
@@ -76,11 +76,11 @@ The final results are integrated and rendered using the `multipanel_plots.R` scr
 
 ---
 
-## 🛠 Requirements
+## Requirements
 * **Software**: R, BEAST v1.10.x, FigTree
 * **R Packages**: `seraphim`, `raster`, `sf`, `ggplot2`, `lubridate`, `dplyr`
 
 ---
 
-## 💡 Usage Note
+## Usage Note
 When adapting these scripts for different epidemic waves (e.g., 2016-2017, 2021-2022, 2022-2023), ensure you update the `mostRecentSamplingDatum` and the working directory paths in the configuration section of each script.
