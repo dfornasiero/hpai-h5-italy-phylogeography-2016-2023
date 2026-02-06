@@ -32,7 +32,7 @@ for(i in 1:length(envt.list)) {
 
 # Clean data and apply spatial constraints
 envt.list <- lapply(envt.list, function(x) {x[x[] < 0] = 0; return(x)}) 
-ita.sh <- read_sf("./data/shp/ita_country/gadm41_ITA_0.shp")
+ita.sh <- read_sf("./italy.shp")
 ita.sh <- st_transform(ita.sh, crs("+proj=longlat +datum=WGS84 +no_defs"))
 envt.list <- lapply(envt.list, function(x) raster::crop(x, ita.sh))
 envt.list <- lapply(envt.list, function(x) raster::mask(x, ita.sh))
@@ -154,4 +154,5 @@ for (pm in pathModels) {
 # 3 - 20          positive
 # 20 - 150        strong
 # >150            very strong
+
 
