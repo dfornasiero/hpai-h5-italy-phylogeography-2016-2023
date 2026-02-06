@@ -153,9 +153,9 @@ clean_time_range_levels <- function(time_range_levels) {
   })
 }
 
-shp.ita <- read_sf("./data/shp/ita_regions/Reg01012023_WGS84.shp")
+shp.ita <- read_sf("./italy.shp")
 shp.ita <- st_transform(shp.ita, crs = CRS('+proj=longlat +datum=WGS84 +no_defs'))
-shp.eu <- read_sf("./data/shp/europe/europe_shp.shp")
+shp.eu <- read_sf("./europe.shp")
 shp.eu <- st_transform(shp.eu, crs = CRS('+proj=longlat +datum=WGS84 +no_defs'))
 
 map.mcc <- ggplot(mcc.cum) +
@@ -353,3 +353,4 @@ plot_grid(plot_grid(plot_grid(epi.curve, sw,
   border("white")
 
 ggsave("./figure1.png", device = "png", dpi = 300, units = "cm", width = 32, height = 25.6)
+
