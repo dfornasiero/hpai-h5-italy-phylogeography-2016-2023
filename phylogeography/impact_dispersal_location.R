@@ -38,7 +38,7 @@ for(i in 1:length(envt.list)) {
 
 # Cleanup: Avoid negative values and mask to Italy
 envt.list <- lapply(envt.list, function(x) {x[x[]<0] = 0; return(x)})
-ita.sh <- read_sf("./data/shp/ita_country/gadm41_ITA_0.shp")
+ita.sh <- read_sf("./italy.shp")
 ita.sh <- st_transform(ita.sh, crs("+proj=longlat +datum=WGS84 +no_defs"))
 envt.list <- lapply(envt.list, function(x) crop(x, ita.sh))
 envt.list <- lapply(envt.list, function(x) raster::mask(x, ita.sh))
@@ -129,3 +129,4 @@ for(i in 1:length(envVariableNames)) {
 }
 
 write.csv(BFs, paste0("./dispersal_location_H5N8_2016-2017.csv"), quote=F)
+
