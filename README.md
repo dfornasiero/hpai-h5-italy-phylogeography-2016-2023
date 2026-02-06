@@ -31,7 +31,8 @@ The project is organised into five main folders:
 * **`data_preparation/`**: R Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
 * **`DTA/`**: BEAST XML configurations for Discrete Trait Analysis.
 * **`continuous_reconstruction/`**: BEAST XML configurations for Continuous Phylogeography.
-* **`phylogeography/`**: A set of scripts for tree extraction, dispersal statistics, and phylogeography analyses.
+* **`phylogeography/`**: A set of R scripts for tree extraction, dispersal statistics, and phylogeography analyses.
+* **`plots/`**: R scripts for producing plots and graphical outputs of the analysis results. 
 
 ---
 
@@ -43,7 +44,7 @@ Clean and align sequences, followed by ML tree estimation to identify monophylet
 * `HPAI_sequence_preparation.R`
 * `ML_data_preparation.R`
 
-### 2. Bayesian Inference (BEAST)
+### 2. Bayesian Inference (BEAST analyses)
 Run the XML files located in the `DTA/` and `continuous_reconstruction/` folders using **BEAST v1.10.4**.
 > [!IMPORTANT]
 > **Data Privacy Note:** To comply with privacy regulations, precise geographic coordinates in the continuous phylogeography XML files have been removed. Consequently, these specific XMLs are provided for structural reference of the model parameters and cannot be re-run.
@@ -58,27 +59,19 @@ Estimate diffusion coefficients and spatial expansion over time.
 * `phylogeographic_dispersal_statistic.R`: Core dispersal metrics (weighted diffusion coefficient and spatial wavefront distance).
 * `spatial_wavefront_distance_per_monophyletic_group.R`: To compute multiple spatial wavefront distances, one for each monophyletic group.
 
-### 5. Landscape Genetics (Environmental Correlation)
+### 5. Phylogeography
 Test the impact of environmental factors (Conductance/Resistance) on viral dispersal.
 * `impact_dispersal_location.R`: Correlation with specific locations.
 * `impact_dispersal_velocity.R`: Using the Least-Cost and Circuitscape path models.
 * `impact_dispersal_velocity_processing.R`: Result synthesis and final table generation for dispersal velocity.
 
----
-
-## Visualizations
+### 6. Result visualizations
 The final results are integrated and rendered using the following R scripts:
 * `ML_tree_plot.R`: Produces standard Maximum Likelihood (ML) tree visualisations for preliminary phylogenetic assessment.
 * `DTA_MCC_tree_plot.R`: Generates tree visualisations based on BEAST Discrete Trait Analysis (DTA) to visualise transitions between specific locations (Italy vs non-Italy).
 * `continuous_MCC_tree_plot.R`: Renders the Maximum Clade Credibility (MCC) trees from BEAST continuous phylogeographic reconstructions, including HPD (Highest Posterior Density) spatial annotations.
 * `multipanel_plot.R`: Assembles various outputs into multi-panel figures (Panel A: Epidemic Curves; Panel B: MCC Continuous Trees; Panel C: Spatial Wavefront Distance; Panel D: Continuous Spatial Reconstruction)
 * `weighted_diffusion_coefficients_plot.R`: To visualise the estimated weighted diffusion coefficients over time.
-
----
-
-## Requirements
-* **Software**: R, BEAST v1.10.x, FigTree
-* **R Packages**: `seraphim`, `raster`, `sf`, `ggplot2`, `lubridate`, `dplyr`
 
 ---
 
