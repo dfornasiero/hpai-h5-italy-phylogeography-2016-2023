@@ -67,12 +67,12 @@ Test the impact of environmental factors (Conductance/Resistance) on viral dispe
 ---
 
 ## Visualizations
-The final results are integrated and rendered using the `multipanel_plots.R` script. This script synthesises the outputs from all previous steps to generate the primary publication figures (Figures 1-3), consisting of:
-* Panel A: Epidemic Curves
-* Panel B: MCC Continuous Trees
-* Panel C: Spatial Wavefront Distance
-* Panel D: Continuous Spatial Reconstruction
-
+The final results are integrated and rendered using the following R scripts:
+* `ML_tree_plot.R`: Produces standard Maximum Likelihood (ML) tree visualisations for preliminary phylogenetic assessment.
+* `DTA_MCC_tree_plot.R`: Generates tree visualisations based on BEAST Discrete Trait Analysis (DTA) to visualise transitions between specific locations (Italy vs non-Italy).
+* `continuous_MCC_tree_plot.R`: Renders the Maximum Clade Credibility (MCC) trees from BEAST continuous phylogeographic reconstructions, including HPD (Highest Posterior Density) spatial annotations.
+* `multipanel_plot.R`: Assembles various outputs into multi-panel figures (Panel A: Epidemic Curves; Panel B: MCC Continuous Trees; Panel C: Spatial Wavefront Distance; Panel D: Continuous Spatial Reconstruction)
+* `weighted_diffusion_coefficients_plot.R`: To visualise the estimated weighted diffusion coefficients over time.
 
 ---
 
