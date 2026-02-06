@@ -44,7 +44,7 @@ Clean and align sequences, followed by ML tree estimation to identify monophylet
 * `HPAI_sequence_preparation.R`
 * `ML_data_preparation.R`
 
-### 2. Bayesian Inference (BEAST analyses)
+### 2. BEAST analyses
 Run the XML files located in the `DTA/` and `continuous_reconstruction/` folders using **BEAST v1.10.4**.
 > [!IMPORTANT]
 > **Data Privacy Note:** To comply with privacy regulations, precise geographic coordinates in the continuous phylogeography XML files have been removed. Consequently, these specific XMLs are provided for structural reference of the model parameters and cannot be re-run.
