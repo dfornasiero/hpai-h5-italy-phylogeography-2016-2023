@@ -27,9 +27,9 @@ This repository contains the data and analytical pipeline for reconstructing the
 ## Project Structure
 The project is organised into five main folders:
 
-* **`data/`**: Zipped files containing cleaned environmental rasters per epidemic wave.
+* **`data/env_raster/`**: Zipped files containing cleaned environmental rasters per epidemic wave.
 * **`data_preparation/`**: R Scripts for sequence cleaning and Maximum Likelihood (ML) tree pre-processing.
-* **`DTA/`**: BEAST XML configurations for Discrete Trait Analysis.
+* **`dta/`**: BEAST XML configurations for Discrete Trait Analysis.
 * **`continuous_reconstruction/`**: BEAST XML configurations for Continuous Phylogeography.
 * **`phylogeography/`**: A set of R scripts for tree extraction, dispersal statistics, and phylogeography analyses.
 * **`plots/`**: R scripts for producing plots and graphical outputs of the analysis results. 
