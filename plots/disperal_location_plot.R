@@ -1,6 +1,6 @@
 # ==============================================================================
-# SCRIPT: DISPERSAL LOCATIONS ANALYSIS (BF FACTORS)
-# Description: Processes Bayes Factor (BF) results across epidemics to visualize 
+# SCRIPT: DISPERSAL LOCATIONS PLOT
+# Description: Display the Bayes Factor (BF) results across epidemics to visualise 
 # associations between environmental variables and HPAI lineage locations.
 # ==============================================================================
 
@@ -102,3 +102,4 @@ plt <- ggplot(ds) +
 windows()
 print(plt)
 ggsave("./figure4.png", device   = "png", dpi = 600, width = 7679, height = 5211, units = "px")
+
