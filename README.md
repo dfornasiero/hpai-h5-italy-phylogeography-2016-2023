@@ -70,7 +70,8 @@ The final results are integrated and rendered using the following R scripts:
 * `ML_tree_plot.R`: Produces standard Maximum Likelihood (ML) tree visualisations for preliminary phylogenetic assessment.
 * `DTA_MCC_tree_plot.R`: Generates tree visualisations based on BEAST Discrete Trait Analysis (DTA) to visualise transitions between specific locations (Italy vs non-Italy).
 * `continuous_MCC_tree_plot.R`: Renders the Maximum Clade Credibility (MCC) trees from BEAST continuous phylogeographic reconstructions, including HPD (Highest Posterior Density) spatial annotations.
-* `multipanel_plot.R`: Assembles various outputs into multi-panel figures (Panel A: Epidemic Curves; Panel B: MCC Continuous Trees; Panel C: Spatial Wavefront Distance; Panel D: Continuous Spatial Reconstruction)
+* `multipanel_plot.R`: Assembles various outputs into multi-panel figures (Panel A: Epidemic Curves; Panel B: MCC Continuous Trees; Panel C: Spatial Wavefront Distance; Panel D: Continuous Spatial Reconstruction).
+* `dispersal_location_plot.R`: To display the BF estimates obtained from the dispersal location analysis.
 * `weighted_diffusion_coefficients_plot.R`: To visualise the estimated weighted diffusion coefficients over time.
 
 ---
