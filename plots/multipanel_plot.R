@@ -42,14 +42,19 @@ library(ggspatial)
 # ------------------------------------------------------------------------------
 ### Continuous reconstruction on map
 # 1. Extracting spatio-temporal information embedded in the MCC tree
+# For the 2016-2017 epidemic, use mccTreeExtractions.r
 source("./mccTreeExtractions.r") # Available from: https://github.com/sdellicour/seraphim/blob/master/windows/R/mccTreeExtractions.R
+# For the 2021-2022 and 2022-2023 epidemics, use mcc_tree_extraction.r
+source("./mcc_tree_extraction.r") # Available from:https://github.com/dfornasiero/hpai-h5-italy-phylogeography-2016-2023/blob/main/plots/mcc_tree_extraction.r
+
 localTreesDirectory = "Tree_extractions"
 nberOfTreesToSample = 1000
 mostRecentSamplingDatum = lubridate::decimal_date(ymd("2017-12-11"))
 
 mcc_tre = readAnnotatedNexus("MCC_main_clade_2016-2017.trees")
 mcc_data = as.treedata(mcc_tre)
-mcc_tab = mccTreeExtractions(mcc_tre, mostRecentSamplingDatum)
+mcc_tab = mccTreeExtractions(mcc_tre, mostRecentSamplingDatum) # 2016-2017 epidemic
+mcc_tab = mcc_tree_extraction(mcc_tre, mostRecentSamplingDatum) # 2021-2022 and 2022-2023 epidemics
 write.table(mcc_tab, "./epidemic_2016-2017_mcc.csv", head=T,row.names=F, quote=F, sep=",")  
 
 
