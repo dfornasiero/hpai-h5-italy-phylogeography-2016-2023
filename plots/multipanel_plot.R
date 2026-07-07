@@ -45,7 +45,7 @@ library(ggspatial)
 # For the 2016-2017 epidemic, use mccTreeExtractions.r
 source("./mccTreeExtractions.r") # Available from: https://github.com/sdellicour/seraphim/blob/master/windows/R/mccTreeExtractions.R
 # For the 2021-2022 and 2022-2023 epidemics, use mcc_tree_extraction.r
-source("./mcc_tree_extraction.r") # Available from:https://github.com/dfornasiero/hpai-h5-italy-phylogeography-2016-2023/blob/main/plots/mcc_tree_extraction.r
+source("./mcc_tree_extraction.r") # Available from: https://github.com/dfornasiero/hpai-h5-italy-phylogeography-2016-2023/blob/main/plots/mcc_tree_extraction.r
 
 localTreesDirectory = "Tree_extractions"
 nberOfTreesToSample = 1000
